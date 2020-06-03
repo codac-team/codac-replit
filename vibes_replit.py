@@ -10,4 +10,6 @@ def init():
 
 def pauseDrawing():
   import sys
-  sys.stdin.read(1) # prevent the GUI closing...
+  sys.stdin.read(1) # prevent the GUI from closing...
+
+init()
