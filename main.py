@@ -1,4 +1,4 @@
-import vibes_replit
+import vibes.vibes_replit as vibes_replit
 from tubex_lib import *
 
 x = Tube(Interval(0,10), 0.01, TFunction("cos(t)+abs(t-5)*[-0.1,0.1]"))
