@@ -7,6 +7,8 @@ authors = ["Simon Rohou <simon.rohou@ensta-bretagne.fr>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 tubex-lib="^3.0.0b5"
+pygame = "^1.9"
+pyibex = "^1.8"
 
 [tool.poetry.dev-dependencies]
 
