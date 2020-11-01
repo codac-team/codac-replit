@@ -1,18 +1,22 @@
 import os
 
 def init():
-  if os.environ.get('Foo') is None:
-    os.environ["XDG_RUNTIME_DIR"] = "/tmp/runtime-runner" # avoids a Qt warning
-    added_delay_at_first_use=2
-  else:
-    added_delay_at_first_use=0
-    
+  os.system('rm ../.vibes.json')
+  os.environ["XDG_RUNTIME_DIR"] = "/tmp/runtime-runner" # avoids a Qt warning
+
   import pygame
   pygame.init()
   os.system('chmod +x vibes/VIBes-viewer && ./vibes/VIBes-viewer &')
   import time
-  time.sleep(1+added_delay_at_first_use) # waiting for VIBes to be ready
+
   os.system('clear') # removing prior warnings in the terminal
+
+  while not os.path.exists('../.vibes.json'):
+    time.sleep(1)
+    os.system('clear')
+    print("Waiting for VIBes to open...")
+  
+  os.system('clear')
 
 def pauseDrawing():
   import sys
