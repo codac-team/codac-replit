@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tubex-replit"
-version = "0.1.1"
+version = "0.1.2"
 description = "A simple way to use Tubex with Python online."
 authors = ["Simon Rohou <simon.rohou@ensta-bretagne.fr>"]
 
