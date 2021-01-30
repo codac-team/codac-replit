@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "tubex-replit"
+name = "codac-replit"
 version = "0.1.2"
-description = "A simple way to use Tubex with Python online."
+description = "A simple way to use Codac with Python online."
 authors = ["Simon Rohou <simon.rohou@ensta-bretagne.fr>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 pyibex = "^1.9.2"
-tubex_lib = "^3.0.10"
+codac = "^3.1.0"
 vibes = "^0.2.2"
 
 [tool.poetry.dev-dependencies]
